@@ -1,7 +1,6 @@
 from tabulate import tabulate
 from datetime import datetime, date, timedelta
 import math as ma
-import random as rd
 
 # DATA MENU
 def list_menu_admin (): #def menu awal
@@ -34,7 +33,7 @@ kode_genre = [
             {'Kode Genre':800,'Genre Buku':'Literatur & Sastra'},
             {'Kode Genre':900,'Genre Buku':'Sejarah & Geografi'},
             {'Kode Genre':1 ,'Genre Buku':'Keseluruhan Daftar Buku'}]
-def genre_buku(): #BISA DI IF ELSE
+def genre_buku(): 
     print(tabulate(kode_genre, headers='keys', tablefmt="grid"))
     
 # DATA LIST BUKU
